@@ -5,6 +5,7 @@
 Taskbar Audio Visualizer is an open-source project aimed at creating an elegant audio visualizer that integrates seamlessly into the Windows taskbar. This visualizer uses system audio as input, rendering dynamic, colorful animations that respond to real-time sound.
 
 ## Features
+
 - Displays a live audio visualizer in the Windows taskbar.
 - Fully customizable colors for the visualizer.
 - Adjustable sensitivity to match your audio preferences.
@@ -16,12 +17,14 @@ Taskbar Audio Visualizer is an open-source project aimed at creating an elegant 
 To set up and run the Taskbar Audio Visualizer, follow these steps:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/taskbar-audio-visualizer.git
    cd taskbar-audio-visualizer
    ```
 
 2. Install the required dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -39,6 +42,7 @@ Once the application is running, the visualizer will appear at the bottom of you
 - Adjust the sensitivity to enhance or reduce the visualizer's responsiveness to audio.
 
 ### Control Panel Options
+
 - **Set Start Color**: Opens a color picker to set the gradient’s start color.
 - **Set End Color**: Opens a color picker to set the gradient’s end color.
 - **Sensitivity Slider**: Adjusts how the visualizer responds to audio input.
@@ -67,5 +71,5 @@ Enjoy your personalized audio visualizer on the Windows taskbar!
 
 Below are some screenshots of the audio visualizer in action:
 
-![Taskbar Visualizer](screenshots/image2.png)
-![Control Panel](screenshots/image1.png)
+![Taskbar Visualizer](screenShots/image2.png)
+![Control Panel](screenShots/image1.png)
