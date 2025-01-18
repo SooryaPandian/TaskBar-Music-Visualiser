@@ -1,0 +1,4 @@
+numpy
+sounddevice
+PyQt5
+tkinter
