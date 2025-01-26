@@ -19,7 +19,7 @@ To set up and run the Taskbar Audio Visualizer, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/taskbar-audio-visualizer.git
+   git clone https://github.com/SooryaPandian/TaskBar-Music-Visualiser.git
    cd taskbar-audio-visualizer
    ```
 
