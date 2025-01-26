@@ -20,7 +20,7 @@ To set up and run the Taskbar Audio Visualizer, follow these steps:
 
    ```bash
    git clone https://github.com/SooryaPandian/TaskBar-Music-Visualiser.git
-   cd taskbar-audio-visualizer
+   cd TaskBar-Music-Visualiser
    ```
 
 2. Install the required dependencies:
@@ -31,7 +31,7 @@ To set up and run the Taskbar Audio Visualizer, follow these steps:
 
 3. Run the application:
    ```bash
-   python main.py
+   python visualizer.py
    ```
 
 ## Usage
