@@ -132,9 +132,7 @@ def detect_audio_devices():
 
     for idx, device in enumerate(devices):
         name = device["name"]
-        if any(keyword in name.lower() for keyword in ["stereo mix", "speaker", "microphone", "virtual cable"]):
-            device_map[name] = idx
-
+        device_map[name] = idx
     return device_map
 
 
