@@ -19,7 +19,7 @@ class TaskbarVisualizer(QMainWindow):
         self.initUI()
         self.timer = QTimer()
         self.timer.timeout.connect(self.updateVisualizer)
-
+#POLAYAADIMONE
     def initUI(self):
         self.setWindowFlags(Qt.FramelessWindowHint | Qt.Tool | Qt.WindowStaysOnTopHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
