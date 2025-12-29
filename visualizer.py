@@ -8,7 +8,27 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget
 import tkinter as tk
 from tkinter import colorchooser, Scale, HORIZONTAL, Button, Label, OptionMenu, StringVar
 
+import json
+import os
 
+# Settings file helpers
+SETTINGS_PATH = os.path.join(os.path.dirname(__file__), "settings.json")
+
+def load_settings():
+    if os.path.exists(SETTINGS_PATH):
+        with open(SETTINGS_PATH, "r") as f:
+            try:
+                return json.load(f)
+            except Exception:
+                return {}
+    return {}
+
+def save_settings(settings):
+    with open(SETTINGS_PATH, "w") as f:
+        json.dump(settings, f, indent=2)
+
+
+# Restore TaskbarVisualizer class
 class TaskbarVisualizer(QMainWindow):
     def __init__(self, shared_state):
         super().__init__()
@@ -111,9 +131,13 @@ class VisualizerWidget(QWidget):
         gradient.setColorAt(0, color_start)
         gradient.setColorAt(1, color_end)
 
-        painter.setBrush(gradient)
-        width = self.width() / len(self.bars)
+        # Use hex color strings from settings
+        color1 = self.shared_state.get("color1", "#00FF00")
+        color2 = self.shared_state.get("color2", "#FF0000")
+        color_start = QColor(color1)
+        color_end = QColor(color2)
 
+        width = self.width() / len(self.bars) if self.bars else 1
         for i, height in enumerate(self.bars):
             bar_height = height * self.height()
             rect = QRect(
@@ -126,13 +150,20 @@ class VisualizerWidget(QWidget):
 
 
 def detect_audio_devices():
-    """Detects available system audio & microphones."""
+    """Detects only 'Microphone' and 'System Sound' devices."""
     devices = sd.query_devices()
-    device_map = {}
-
+    mic_index = None
+    sys_index = None
     for idx, device in enumerate(devices):
-        name = device["name"]
-        device_map[name] = idx
+        if device['max_input_channels'] > 0 and mic_index is None:
+            mic_index = idx
+        if device['max_output_channels'] > 0 and sys_index is None:
+            sys_index = idx
+    device_map = {}
+    if mic_index is not None:
+        device_map['Microphone'] = mic_index
+    if sys_index is not None:
+        device_map['System Sound'] = sys_index
     return device_map
 
 
@@ -168,19 +199,21 @@ def launch_control_panel(shared_state, visualizer):
     root.title("Visualizer Control Panel")
     root.geometry("350x300")
 
-    # Audio Device Selection
-    Label(root, text="Select Audio Device:").pack()
+    # Audio Device Selection (only two options)
+    Label(root, text="Select Audio Source:").pack()
     device_map = shared_state.get("device_map", {})
     selected_device_var = StringVar(root)
-    
-    if device_map:
-        first_device = next(iter(device_map))  # Get first device as default
-        selected_device_var.set(first_device)
-        shared_state["selected_device"] = first_device  # Store first as default
+    options = []
+    if 'Microphone' in device_map:
+        options.append('Microphone')
+    if 'System Sound' in device_map:
+        options.append('System Sound')
+    if options:
+        selected_device_var.set(options[0])
+        shared_state["selected_device"] = options[0]
     else:
         selected_device_var.set("No valid device found")
-
-    device_dropdown = OptionMenu(root, selected_device_var, *device_map.keys(), command=update_device)
+    device_dropdown = OptionMenu(root, selected_device_var, *options, command=update_device)
     device_dropdown.pack(pady=5)
 
     # Color Settings
@@ -202,12 +235,14 @@ def launch_control_panel(shared_state, visualizer):
 
 
 if __name__ == '__main__':
-    shared_state = {
-        "color_start": (255, 105, 180),
-        "color_end": (255, 0, 0),
-        "sensitivity": 0.1,
-        "device_map": detect_audio_devices()
-    }
+    # Load settings
+    settings = load_settings()
+    settings.setdefault("color1", "#00FF00")
+    settings.setdefault("color2", "#FF0000")
+    settings.setdefault("sensitivity", 1.0)
+    settings["device_map"] = detect_audio_devices()
+
+    shared_state = settings
 
     app = QApplication(sys.argv)
     visualizer = TaskbarVisualizer(shared_state)

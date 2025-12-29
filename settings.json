@@ -1,0 +1,9 @@
+{
+  "color1": "#00FF00",
+  "color2": "#FF0000",
+  "position": "top",
+  "sensitivity": 1.0,
+  "column_distance": 4,
+  "horizontal_offset": 0,
+  "width": 800
+}
