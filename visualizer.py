@@ -51,33 +51,36 @@ class TaskbarVisualizer(QMainWindow):
         self.setCentralWidget(self.visualizerWidget)
 
     def startVisualizer(self):
-        selected_device_name = self.shared_state.get("selected_device")
-        device_index = self.shared_state.get("device_map", {}).get(selected_device_name)
+        selected = self.shared_state.get("selected_device")
+        device_index = self.shared_state["device_map"].get(selected)
 
         if device_index is None:
-            print("No valid audio device selected!")
+            print("No valid audio device selected")
             return
 
-        self.shared_state["device_index"] = device_index
-
-        self.stopVisualizer()  # Ensure the previous stream is stopped before restarting
+        self.stopVisualizer()
 
         try:
+            info = sd.query_devices(device_index)
+
             self.stream = sd.InputStream(
                 device=device_index,
-                channels=2,
-                samplerate=44100,
+                samplerate=int(info['default_samplerate']),
+                channels=min(2, info['max_input_channels']),
                 blocksize=1024,
-                dtype=np.int16,
+                dtype='int16',
                 callback=self.audio_callback
             )
+
             self.stream.start()
             self.timer.start(30)
             self.is_running = True
-            print(f"Visualizer started on: {selected_device_name}")
-            self.shared_state["toggle_button"].config(text="Stop Visualizer")  # Update button text
+            self.shared_state["toggle_button"].config(text="Stop Visualizer")
+
+            print("Visualizer started on:", info['name'])
+
         except Exception as e:
-            print(f"Error starting audio stream: {e}")
+            print("Error starting audio stream:", e)
 
     def stopVisualizer(self):
         if self.is_running:
@@ -150,21 +153,25 @@ class VisualizerWidget(QWidget):
 
 
 def detect_audio_devices():
-    """Detects only 'Microphone' and 'System Sound' devices."""
+    device_map = {}
+
     devices = sd.query_devices()
     mic_index = None
     sys_index = None
-    for idx, device in enumerate(devices):
-        if device['max_input_channels'] > 0 and mic_index is None:
+    for idx, d in enumerate(devices):
+        name = d['name'].lower()
+
+        # Microphone
+        if d['max_input_channels'] > 0 and mic_index is None:
+            device_map['Microphone'] = idx
             mic_index = idx
-        if device['max_output_channels'] > 0 and sys_index is None:
+
+        # System audio via Stereo Mix
+        if 'stereo mix' in name and d['max_input_channels'] > 0 and sys_index is None:
+            device_map['System Sound'] = idx
             sys_index = idx
-    device_map = {}
-    if mic_index is not None:
-        device_map['Microphone'] = mic_index
-    if sys_index is not None:
-        device_map['System Sound'] = sys_index
     return device_map
+
 
 
 def launch_control_panel(shared_state, visualizer):
