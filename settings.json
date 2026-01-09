@@ -5,5 +5,488 @@
   "sensitivity": 1.0,
   "column_distance": 4,
   "horizontal_offset": 0,
-  "width": 800
-}
+  "width": 800,
+  "device_map": {
+    "\ud83c\udfa4 Microsoft Sound Mapper - Input": {
+      "index": 0,
+      "name": "Microsoft Sound Mapper - Input",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 44100.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Microphone Array (Intel\u00ae Smart ": {
+      "index": 1,
+      "name": "Microphone Array (Intel\u00ae Smart ",
+      "max_input_channels": 4,
+      "max_output_channels": 0,
+      "default_samplerate": 44100.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Microphone Array (InstaShare2Va": {
+      "index": 2,
+      "name": "Microphone Array (InstaShare2Va",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 44100.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Microsoft Sound Mapper - Output": {
+      "index": 3,
+      "name": "Microsoft Sound Mapper - Output",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 44100.0,
+      "is_input": false
+    },
+    "\ud83d\udd0a System: Speaker (Realtek(R) Audio)": {
+      "index": 13,
+      "name": "Speaker (Realtek(R) Audio)",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 48000.0,
+      "is_input": false
+    },
+    "\ud83d\udd0a System: Speakers (InstaShare2Vad)": {
+      "index": 12,
+      "name": "Speakers (InstaShare2Vad)",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 48000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Primary Sound Capture Driver": {
+      "index": 6,
+      "name": "Primary Sound Capture Driver",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 44100.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Microphone Array (Intel\u00ae Smart Sound Technology for Digital Microphones)": {
+      "index": 15,
+      "name": "Microphone Array (Intel\u00ae Smart Sound Technology for Digital Microphones)",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 48000.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Microphone Array (InstaShare2Vad)": {
+      "index": 14,
+      "name": "Microphone Array (InstaShare2Vad)",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 48000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Primary Sound Driver": {
+      "index": 9,
+      "name": "Primary Sound Driver",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 44100.0,
+      "is_input": false
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(BS319+))": {
+      "index": 16,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(BS319+))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(BS319+))": {
+      "index": 17,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(BS319+))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Speakers (InstaShare2Vad Wave Speaker)": {
+      "index": 18,
+      "name": "Speakers (InstaShare2Vad Wave Speaker)",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 48000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Microphone Array (InstaShare2Vad Wave Microphone Array - Front)": {
+      "index": 19,
+      "name": "Microphone Array (InstaShare2Vad Wave Microphone Array - Front)",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 48000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Noise Buds VS102))": {
+      "index": 20,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Noise Buds VS102))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Noise Buds VS102))": {
+      "index": 21,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Noise Buds VS102))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headphones ()": {
+      "index": 78,
+      "name": "Headphones ()",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 44100.0,
+      "is_input": false
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 91))": {
+      "index": 23,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 91))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 91))": {
+      "index": 24,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 91))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Speakers 1 (Realtek HD Audio output with SST)": {
+      "index": 25,
+      "name": "Speakers 1 (Realtek HD Audio output with SST)",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 48000.0,
+      "is_input": false
+    },
+    "\ud83d\udd0a System: Speakers 2 (Realtek HD Audio output with SST)": {
+      "index": 26,
+      "name": "Speakers 2 (Realtek HD Audio output with SST)",
+      "max_input_channels": 0,
+      "max_output_channels": 8,
+      "default_samplerate": 44100.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 PC Speaker (Realtek HD Audio output with SST)": {
+      "index": 27,
+      "name": "PC Speaker (Realtek HD Audio output with SST)",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 48000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headphones 1 (Realtek HD Audio 2nd output with SST)": {
+      "index": 28,
+      "name": "Headphones 1 (Realtek HD Audio 2nd output with SST)",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 48000.0,
+      "is_input": false
+    },
+    "\ud83d\udd0a System: Headphones 2 (Realtek HD Audio 2nd output with SST)": {
+      "index": 29,
+      "name": "Headphones 2 (Realtek HD Audio 2nd output with SST)",
+      "max_input_channels": 0,
+      "max_output_channels": 8,
+      "default_samplerate": 44100.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 PC Speaker (Realtek HD Audio 2nd output with SST)": {
+      "index": 30,
+      "name": "PC Speaker (Realtek HD Audio 2nd output with SST)",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 48000.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Microphone (Realtek HD Audio Mic input)": {
+      "index": 31,
+      "name": "Microphone (Realtek HD Audio Mic input)",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 44100.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Stereo Mix (Realtek HD Audio Stereo input)": {
+      "index": 32,
+      "name": "Stereo Mix (Realtek HD Audio Stereo input)",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 48000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 131))": {
+      "index": 34,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 131))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 131))": {
+      "index": 35,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 131))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(887))": {
+      "index": 39,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(887))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(887))": {
+      "index": 40,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(887))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Boult Audio Airbass))": {
+      "index": 42,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Boult Audio Airbass))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Boult Audio Airbass))": {
+      "index": 43,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Boult Audio Airbass))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 161))": {
+      "index": 44,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 161))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 161))": {
+      "index": 45,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 161))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(OnePlus Nord Buds 2r))": {
+      "index": 46,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(OnePlus Nord Buds 2r))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(OnePlus Nord Buds 2r))": {
+      "index": 47,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(OnePlus Nord Buds 2r))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Input ()": {
+      "index": 48,
+      "name": "Input ()",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 44100.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Microphone Array 1 ()": {
+      "index": 52,
+      "name": "Microphone Array 1 ()",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 48000.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Microphone Array 2 ()": {
+      "index": 53,
+      "name": "Microphone Array 2 ()",
+      "max_input_channels": 2,
+      "max_output_channels": 0,
+      "default_samplerate": 48000.0,
+      "is_input": true
+    },
+    "\ud83c\udfa4 Microphone Array 3 ()": {
+      "index": 54,
+      "name": "Microphone Array 3 ()",
+      "max_input_channels": 4,
+      "max_output_channels": 0,
+      "default_samplerate": 16000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 131 Pro))": {
+      "index": 55,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 131 Pro))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 131 Pro))": {
+      "index": 56,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 131 Pro))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes Drift))": {
+      "index": 57,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes Drift))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes Drift))": {
+      "index": 58,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes Drift))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Stone 350))": {
+      "index": 60,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Stone 350))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Stone 350))": {
+      "index": 61,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Stone 350))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(EC001-K29))": {
+      "index": 63,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(EC001-K29))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(EC001-K29))": {
+      "index": 64,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(EC001-K29))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Speakers ()": {
+      "index": 66,
+      "name": "Speakers ()",
+      "max_input_channels": 0,
+      "max_output_channels": 2,
+      "default_samplerate": 44100.0,
+      "is_input": false
+    },
+    "\ud83d\udd0a System: Output (@System32\\drivers\\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0\r\n;(POCO F5))": {
+      "index": 67,
+      "name": "Output (@System32\\drivers\\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0\r\n;(POCO F5))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Input (@System32\\drivers\\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0\r\n;(POCO F5))": {
+      "index": 68,
+      "name": "Input (@System32\\drivers\\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0\r\n;(POCO F5))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(TICON-T PODS))": {
+      "index": 70,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(TICON-T PODS))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(TICON-T PODS))": {
+      "index": 71,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(TICON-T PODS))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(WI-C200))": {
+      "index": 73,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(WI-C200))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(WI-C200))": {
+      "index": 74,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(WI-C200))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(MAGIC-6))": {
+      "index": 76,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(MAGIC-6))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(MAGIC-6))": {
+      "index": 77,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(MAGIC-6))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    },
+    "\ud83d\udd0a System: Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 141))": {
+      "index": 79,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 141))",
+      "max_input_channels": 0,
+      "max_output_channels": 1,
+      "default_samplerate": 8000.0,
+      "is_input": false
+    },
+    "\ud83c\udfa4 Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 141))": {
+      "index": 80,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes 141))",
+      "max_input_channels": 1,
+      "max_output_channels": 0,
+      "default_samplerate": 8000.0,
+      "is_input": true
+    }
+  },
+  "selected_device": "\ud83d\udd0a System: Microsoft Sound Mapper - Output",
+  "toggle_button": 
